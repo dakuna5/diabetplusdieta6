@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="screen-1-VC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+<!--Screen 1-->
+        <scene sceneID="screen-1-Scene">
+            <objects>
+                <viewController restorationIdentifier="screen1" storyboardIdentifier="screen1" id="screen-1-VC" userLabel="Screen 1" sceneMemberID="viewController" customClass="APScreen1" customModuleProvider="target">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="screen-1-Top"/>
+                        <viewControllerLayoutGuide type="bottom" id="screen-1-Bottom"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="screen-1" >
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        <subviews>
+    <tableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES"  contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Table-1" userLabel="Users Table"   alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" pagingEnabled="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28">
+        <rect key="frame" x="0" y="20" width="375" height="647"/>
+        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        <userDefinedRuntimeAttributes></userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="screen-1-VC" id="Table-1-DataSource"/>
+                                    <outlet property="delegate" destination="screen-1-VC" id="Table-1-Delegate"/>
+                                </connections>
+        <color key="separatorColor" red="0.7540689" green="0.7540868" blue="0.7540771" alpha="1" colorSpace="calibratedRGB"/>
+        <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+        <constraints>
+        </constraints>
+        <prototypes>
+                     <tableViewCell rowHeight="70" id="Cell-1-Cell" userLabel="User Cell" selectionStyle="none" indentationWidth="10" reuseIdentifier="usercell" clipsSubviews="YES" contentMode="scaleToFill" customClass="APUsercell" customModuleProvider="target">
+                        <rect key="frame" x="0" y="0" width="375" height="70"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0" colorSpace="calibratedRGB"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES"  contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cell-1" userLabel="Cell ContentView"   tableViewCell="Cell-1-Cell">
+        <rect key="frame" x="0" y="0" width="375" height="70"/>
+        <color key="backgroundColor" red="0.999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        <userDefinedRuntimeAttributes></userDefinedRuntimeAttributes>
+                            <autoresizingMask key="autoresizingMask"/>
+        <subviews>
+    <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES"  contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Label-1" userLabel="Name Label"   textAlignment="left" lineBreakMode="wordWrap" numberOfLines="0" horizontalHuggingPriority="251" verticalHuggingPriority="251" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" >
+        <string key="text">Text</string>
+        <rect key="frame" x="80" y="24" width="200" height="39"/>
+        <color key="backgroundColor" red="0.8039216" green="0.9411765" blue="0.9215686" alpha="0" colorSpace="calibratedRGB"/>
+        <userDefinedRuntimeAttributes>
+            <userDefinedRuntimeAttribute type="number" keyPath="letterSpacing">
+                <real key="value" value="0"/>
+            </userDefinedRuntimeAttribute>
+            <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                <real key="value" value="0"/>
+            </userDefinedRuntimeAttribute>
+            <userDefinedRuntimeAttribute type="number" keyPath="paragraphSpacing">
+                <real key="value" value="0"/>
+            </userDefinedRuntimeAttribute>
+        </userDefinedRuntimeAttributes>
+                                <connections>
+                                </connections>
+        <fontDescription key="fontDescription" pointSize="12" type="system" />
+        <color key="textColor" red="0.4756349" green="0.4756467" blue="0.4756404" alpha="1" colorSpace="calibratedRGB"/>
+        <nil key="highlightedColor"/>
+        <constraints>
+        </constraints>
+    </label>
+    <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES"  contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="View-1" userLabel="User Pic Container"  >
+        <rect key="frame" x="10" y="29" width="62" height="62"/>
+        <color key="backgroundColor" red="0.921431" green="0.9214526" blue="0.921441" alpha="0.7342134" colorSpace="calibratedRGB"/>
+        <userDefinedRuntimeAttributes>
+            <userDefinedRuntimeAttribute type="number" keyPath="anCornerRadius">
+                <real key="value" value="31"/>
+            </userDefinedRuntimeAttribute>
+        </userDefinedRuntimeAttributes>
+                                <connections>
+                                </connections>
+        <subviews>
+    <imageView image="" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES"  contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="image-1" userLabel="Image"   >
+        <rect key="frame" x="1" y="1" width="60" height="60"/>
+        <color key="backgroundColor" red="0.837418" green="0.8374378" blue="0.8374271" alpha="1" colorSpace="calibratedRGB"/>
+        <userDefinedRuntimeAttributes>
+            <userDefinedRuntimeAttribute type="number" keyPath="anCornerRadius">
+                <real key="value" value="30"/>
+            </userDefinedRuntimeAttribute>
+        </userDefinedRuntimeAttributes>
+                                <connections>
+                                </connections>
+        <constraints>
+        </constraints>
+    </imageView>
+        </subviews>
+        <constraints>
+            <constraint  firstItem="image-1" firstAttribute="width" constant="60" priority="980" id="image-1-width" userLabel="Image-width"/>
+            <constraint  firstItem="image-1" firstAttribute="height" constant="60" priority="981" id="image-1-height" userLabel="Image-height"/>
+            <constraint secondAttribute="centerY" secondItem="View-1" firstItem="image-1" firstAttribute="centerY" constant="0" priority="986" id="image-1-centerVertically" userLabel="Image-centerY"/>
+            <constraint secondAttribute="centerX" secondItem="View-1" firstItem="image-1" firstAttribute="centerX" constant="0" priority="987" id="image-1-centerHorizontally" userLabel="Image-centerX"/>
+        </constraints>
+    </view>
+    <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES"  contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Label-2" userLabel="Label"   textAlignment="left" lineBreakMode="wordWrap" numberOfLines="0" horizontalHuggingPriority="251" verticalHuggingPriority="251" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" >
+        <string key="text"></string>
+        <rect key="frame" x="80" y="4" width="200" height="39"/>
+        <color key="backgroundColor" red="0.8039216" green="0.9411765" blue="0.9215686" alpha="0" colorSpace="calibratedRGB"/>
+        <userDefinedRuntimeAttributes>
+            <userDefinedRuntimeAttribute type="number" keyPath="letterSpacing">
+                <real key="value" value="0"/>
+            </userDefinedRuntimeAttribute>
+            <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                <real key="value" value="0"/>
+            </userDefinedRuntimeAttribute>
+            <userDefinedRuntimeAttribute type="number" keyPath="paragraphSpacing">
+                <real key="value" value="0"/>
+            </userDefinedRuntimeAttribute>
+        </userDefinedRuntimeAttributes>
+                                <connections>
+                                </connections>
+        <fontDescription key="fontDescription" pointSize="14" type="system" />
+        <color key="textColor" red="0.1294118" green="0.1294118" blue="0.1294118" alpha="1" colorSpace="calibratedRGB"/>
+        <nil key="highlightedColor"/>
+        <constraints>
+        </constraints>
+    </label>
+        </subviews>
+        <constraints>
+            <constraint multiplier="1" secondAttribute="left" secondItem="Cell-1" firstItem="Label-1" firstAttribute="left" constant="80" priority="984" id="Label-1-left" userLabel="Name Label-left"/>
+            <constraint secondAttribute="centerY" secondItem="Cell-1" firstItem="Label-1" firstAttribute="centerY" constant="8.5" priority="986" id="Label-1-centerVertically" userLabel="Name Label-centerY"/>
+            <constraint firstItem="Label-1" firstAttribute="width" constant="200" priority="971" id="Label-1-width" userLabel="Name Label-width"/>
+            <constraint firstItem="Label-1" firstAttribute="height" constant="39" priority="972" id="Label-1-height" userLabel="Name Label-height"/>
+            <constraint multiplier="1" secondAttribute="left" secondItem="Cell-1" firstItem="View-1" firstAttribute="left" constant="10" priority="984" id="View-1-left" userLabel="User Pic Container-left"/>
+            <constraint secondAttribute="centerY" secondItem="Cell-1" firstItem="View-1" firstAttribute="centerY" constant="0" priority="986" id="View-1-centerVertically" userLabel="User Pic Container-centerY"/>
+            <constraint firstItem="View-1" firstAttribute="width" constant="62" priority="971" id="View-1-width" userLabel="User Pic Container-width"/>
+            <constraint firstItem="View-1" firstAttribute="height" constant="62" priority="972" id="View-1-height" userLabel="User Pic Container-height"/>
+            <constraint firstItem="Label-2" firstAttribute="width" constant="200" priority="971" id="Label-2-width" userLabel="Label-width"/>
+            <constraint firstItem="Label-2" firstAttribute="height" constant="39" priority="972" id="Label-2-height" userLabel="Label-height"/>
+            <constraint secondAttribute="top" secondItem="Cell-1" firstItem="Label-2" firstAttribute="top" constant="4" priority="973" id="Label-2-top" userLabel="Label-top"/>
+            <constraint secondAttribute="left" secondItem="Cell-1" firstItem="Label-2" firstAttribute="left" constant="80" priority="974" id="Label-2-left" userLabel="Label-left"/>
+        </constraints>
+                        </tableViewCellContentView>
+                        <constraints>
+                            <constraint firstItem="Cell-1" firstAttribute="left" secondItem="Cell-1-Cell" secondAttribute="left" id="Cell-1-ContentView-left" userLabel="ContentView-Left"/>
+                            <constraint firstItem="Cell-1" firstAttribute="top" secondItem="Cell-1-Cell" secondAttribute="top" id="Cell-1-ContentView-top" userLabel="ContentView-Top"/>
+                            <constraint firstAttribute="bottom" secondItem="Cell-1" secondAttribute="bottom" id="Cell-1-ContentView-bottom" userLabel="ContentView-Bottom"/>
+                            <constraint firstAttribute="right" secondItem="Cell-1" secondAttribute="right" id="Cell-1-ContentView-right" userLabel="ContentView-Right"/>
+                        </constraints>
+                                <connections>
+                                    <outlet property="label19" destination="Label-1" id="label19-Cell-1-Prop"/>
+        
+                                    <outlet property="view8" destination="View-1" id="view8-Cell-1-Prop"/>
+        
+                                    <outlet property="view8Image16" destination="image-1" id="view8Image16-Cell-1-Prop"/>
+        
+                                    <outlet property="label20" destination="Label-2" id="label20-Cell-1-Prop"/>
+        
+                                </connections>
+</tableViewCell>
+        </prototypes>
+    </tableView>
+        </subviews>
+        <constraints>
+            <constraint multiplier="1" secondAttribute="top" secondItem="screen-1" firstItem="Table-1" firstAttribute="top" constant="20" priority="982" id="Table-1-top" userLabel="Users Table-top"/>
+            <constraint multiplier="1.0" secondAttribute="bottom" secondItem="screen-1" firstItem="Table-1" firstAttribute="bottom" constant="0" priority="983" id="Table-1-bottom" userLabel="Users Table-bottom"/>
+            <constraint multiplier="1" secondAttribute="left" secondItem="screen-1" firstItem="Table-1" firstAttribute="left" constant="0" priority="984" id="Table-1-left" userLabel="Users Table-left"/>
+            <constraint multiplier="2.0" secondAttribute="centerX" secondItem="screen-1" firstItem="Table-1" firstAttribute="right" constant="0" priority="985" id="Table-1-right" userLabel="Users Table-right"/>
+        </constraints>
+                                <connections>
+                                </connections>
+</view>
+                    <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="hidesNavBar" value="YES"/>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="hidesStatusBar" value="NO"/>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="lightStatusBar" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="userstablesmall" destination="Table-1" id="userstablesmall-screen-1-Prop"/>
+
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="screen-1-FR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0" y="0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="" />
+    </resources>
+</document>
